@@ -10,6 +10,7 @@ import UIKit
 
 struct ShoppingCartModel {
     var products: [Product]
+    var storeName: String
 }
 
 struct Product {

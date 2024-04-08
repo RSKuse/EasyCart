@@ -9,11 +9,11 @@ import UIKit
 
 class EmptyCartViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var cart = ShoppingCartModel(products: [])
+    var cart = ShoppingCartModel(products: [], storeName: "H&M")
    
     let shopProducts: [Product] = [Product(itemName: "Make-up brushes", itemPrice: 253.89, itemImage: UIImage(named: "makeup_sponges_closed")!),
-                                   Product(itemName: "Nappies", itemPrice: 463.20, itemImage: UIImage(named: "makeup_sponges_closed")!),
-                                   Product(itemName: "Nivea", itemPrice: 53.00, itemImage: UIImage(named: "makeup_sponges_closed")!),
+                                   Product(itemName: "Nappies", itemPrice: 463.20, itemImage: UIImage(named: "body_suit")!),
+                                   Product(itemName: "Mini makeup sponges - multi", itemPrice: 53.00, itemImage: UIImage(named: "makeup_sponges_closed")!),
                                    Product(itemName: "Vaseline", itemPrice: 25.00, itemImage: UIImage(named: "makeup_sponges_closed")!),
                                    Product(itemName: "Shield Roll-On", itemPrice: 32.50, itemImage: UIImage(named: "makeup_sponges_closed")!)]
     
