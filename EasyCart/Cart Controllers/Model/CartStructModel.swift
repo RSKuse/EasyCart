@@ -10,11 +10,11 @@ import UIKit
 
 struct ShoppingCartModel {
     var products: [Product]
-    var storeName: String
 }
 
 struct Product {
     let itemName: String
     let itemPrice: Double
     let itemImage: UIImage
+    let storeName: String
 }

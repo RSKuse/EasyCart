@@ -13,7 +13,7 @@ class ShoppingCartCells: UITableViewCell {
     lazy var productImageView: UIImageView = {
         let imageView = UIImageView()
         //imageView.image = UIImage(named: "makeup_sponges_closed")
-        imageView.isHidden = true
+        //imageView.isHidden = false
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -23,7 +23,7 @@ class ShoppingCartCells: UITableViewCell {
     lazy var productNameLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 2
-        label.font = UIFont.systemFont(ofSize: 8, weight: UIFont.Weight.regular)
+        label.font = UIFont.systemFont(ofSize: 14, weight: UIFont.Weight.semibold)
         label.textColor = UIColor.black
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -32,8 +32,8 @@ class ShoppingCartCells: UITableViewCell {
     lazy var storeNameLabel: UILabel = {
         let label = UILabel()
         label.text = "CASSIE KIDS"
-        label.font = UIFont.systemFont(ofSize: 8, weight: UIFont.Weight.regular)
-        label.textColor = UIColor.systemGray4
+        label.font = UIFont.systemFont(ofSize: 10, weight: UIFont.Weight.regular)
+        label.textColor = UIColor.systemGray2
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -51,7 +51,7 @@ class ShoppingCartCells: UITableViewCell {
     lazy var productPriceLabel: UILabel = {
         let label = UILabel()
         label.text = "R0.00"
-        label.font = UIFont.systemFont(ofSize: 8, weight: UIFont.Weight.regular)
+        label.font = UIFont.systemFont(ofSize: 15, weight: UIFont.Weight.semibold)
         label.textColor = UIColor.black
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
