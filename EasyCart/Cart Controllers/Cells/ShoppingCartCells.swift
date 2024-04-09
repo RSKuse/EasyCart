@@ -41,7 +41,7 @@ class ShoppingCartCells: UITableViewCell {
     lazy var labelStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [productNameLabel, storeNameLabel])
         stackView.distribution = .fillProportionally
-        stackView.spacing = 1.0
+        stackView.spacing = 0.5
         stackView.alignment = .leading
         stackView.axis = .vertical
         stackView.translatesAutoresizingMaskIntoConstraints = false
@@ -78,7 +78,7 @@ class ShoppingCartCells: UITableViewCell {
         
         labelStackView.leftAnchor.constraint(equalTo: productImageView.rightAnchor, constant: 12).isActive = true
         labelStackView.rightAnchor.constraint(equalTo: productPriceLabel.leftAnchor, constant: 16).isActive = true
-        labelStackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -23).isActive = true
+        labelStackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -24).isActive = true
         labelStackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 24).isActive = true
         
         productPriceLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -20).isActive = true

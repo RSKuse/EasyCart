@@ -189,6 +189,7 @@ class EmptyCartViewController: UIViewController, UITableViewDelegate, UITableVie
         priceLabel.text = "R\(totalAmount)"
  
     }
+    
 
 }
 
