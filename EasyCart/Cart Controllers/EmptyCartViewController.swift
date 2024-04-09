@@ -11,11 +11,14 @@ class EmptyCartViewController: UIViewController, UITableViewDelegate, UITableVie
     
     var cart = ShoppingCartModel(products: [])
    
-    let shopProducts: [Product] = [Product(itemName: "Make-up brushes", itemPrice: 253.89, itemImage: UIImage(named: "makeup_sponges_closed")!),
-                                   Product(itemName: "Nappies", itemPrice: 463.20, itemImage: UIImage(named: "makeup_sponges_closed")!),
-                                   Product(itemName: "Nivea", itemPrice: 53.00, itemImage: UIImage(named: "makeup_sponges_closed")!),
-                                   Product(itemName: "Vaseline", itemPrice: 25.00, itemImage: UIImage(named: "makeup_sponges_closed")!),
-                                   Product(itemName: "Shield Roll-On", itemPrice: 32.50, itemImage: UIImage(named: "makeup_sponges_closed")!)]
+    let shopProducts: [Product] = [Product(itemName: "Make-up brushes", itemPrice: 253.89, itemImage: UIImage(named: "makeup_sponges_closed")!,
+                                           storeName: "H&M"),
+                                   Product(itemName: "Nappies", itemPrice: 463.20, itemImage: UIImage(named: "body_suit")!,
+                                           storeName: "CASSIE KIDS"),
+                                   Product(itemName: "Mini makeup sponges - multi", itemPrice: 53.00, itemImage: UIImage(named: "makeup_sponges_closed")!,
+                                           storeName: "EDGARS"),
+                                   Product(itemName: "Vaseline", itemPrice: 25.00, itemImage: UIImage(named: "makeup_sponges_closed")!, storeName: "CLICKS"),
+                                   Product(itemName: "Shield Roll-On", itemPrice: 32.50, itemImage: UIImage(named: "makeup_sponges_closed")!,          storeName: "DISCHEM")]
     
 
     lazy var shoppingCartTableView: UITableView = {
@@ -186,6 +189,7 @@ class EmptyCartViewController: UIViewController, UITableViewDelegate, UITableVie
         priceLabel.text = "R\(totalAmount)"
  
     }
+    
 
 }
 
